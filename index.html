@@ -64,13 +64,27 @@
 			<a href="//youtube.com/channel/UCxjvNMTIspvh8Hbvcn0HSOw"><img width="88" height="31" alt="Protected by Norton Antivirus" src="img/88x31/norton2.gif" border="0"></a>
 			<a href="//notepad-plus-plus.org"><img width="88" height="31" alt="Made with Notepad++" src="img/88x31/notepadpp3.gif" border="0"></a>
 			<img width="88" height="31" src="img/88x31/nya2.gif" alt="nya~" border="0">
+			<a href="//dimden.dev/"><img src="//dimden.dev/images/88x31.gif"></a>
 			<a href="//www.theonion.com/"><img width="88" height="31" alt="The Onion" src="img/88x31/onionlink1098.gif" border="0"></a>
 			<img width="88" height="31" alt="Don't be a phone chump! Get a computer, now!" src="img/88x31/phonechump.gif">
 			<a href="//www.youtube.com/playlist?list=PLbAgrKHyJ8gV-mPmp9qpUhZSh3QYhu93N"><img width="88" height="31" alt="Windows crashes? Windows fixes!" src="img/88x31/protectb.gif" border="0"></a>
 			<a href="//www.scottgames.com"><img width="88" height="31" alt="Scott Games" src="img/88x31/scottgames.gif" border="0"></a>
 			<a href="//wiby.me"><img width="88" height="31" alt="wiby.me search" src="img/88x31/wiby.gif" border="0"></a>
-			<a href="//vanillo.tv"><img width="88" height="31" alt="Vanillo" src="img/88x31/vanillo.png" border="0"><br><br></a>
+			<a href="//vanillo.tv"><img width="88" height="31" alt="Vanillo" src="img/88x31/vanillo.png" border="0"></a><br><br>
+			<div id="navlink"></div>
 			<span style="font-size:10px;"><a href="contact">contact</a></span>
 		</div>
+		<script>
+			function supportsModernSSL() {
+				return window.crypto && window.crypto.subtle;
+			}
+			function injectNavLink() {
+				const contentDiv = document.getElementById('navlink');
+				if (supportsModernSSL()) {
+					contentDiv.innerHTML = '<iframe width="180" height="180" style="border:none" src="//dimden.neocities.org/navlink/" name="neolink"></iframe><br><br>';
+				}
+			}
+			injectNavLink();
+		</script>
 	</body>
 </html>
